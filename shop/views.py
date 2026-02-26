@@ -136,7 +136,7 @@ def checkout(request):
             price=item.product.price
         )
     
-    # Clear cart
+   
     cart_items.delete()
     
     messages.success(request, 'Order placed!')
